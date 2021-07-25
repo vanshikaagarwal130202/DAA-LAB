@@ -17,16 +17,17 @@ int main()
     int k;
     cout<<"Enter the number to be find=";
     cin>>k;
-    for(int i=0;i<n;i++)
+    int i;
+    for(i=0;i<n;i++)
     {
         if(a[i]==k)
         {
             cout<<"Present and Number of comparisions= "<<i+1<<endl;
             break;
         }
-        else if(i==n-1)
-            cout<<"Not Present and number of comparisons="<<i+1<<endl;
     }
+     if(i==n)
+            cout<<"Not Present and number of comparisons="<<i<<endl;
 }
 return 0;
 }
